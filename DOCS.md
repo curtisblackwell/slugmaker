@@ -12,5 +12,5 @@ Making slugs often requires lowercase characters as well. To do so, use the lowe
   
     {{ slugmaker lower="true" }}
 
-You can pass any value that evaluates to true (`yes` or `1` for example).
+<p class="alert alert-info">You can pass any value that evaluates to true (<code>yes</code> or <code>1</code> for example).</p>
 {{ /noparse }}
