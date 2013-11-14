@@ -1,16 +1,19 @@
 {{ noparse }}
-### You Don't Need This Plugin
-Most of the time, [slugify](http://statamic.com/learn/documentation/variable-modifiers/slugify) gets the job done. However, variable modifiers don't work on plugins.
+<div class="alert alert-info">
+  <p><strong>You don't need this plugin.</strong></p>
+  <p>Most of the time, <a href="http://statamic.com/learn/documentation/variable-modifiers/slugify">slugify</a> gets the job done. However, variable modifiers don't work on plugins.</p>
+</div>
 
-### The Tag
-Wrap the content to be parsed in `{{ slugmaker }}` tags.
+### `{{ slugmaker }}`
+`{{ slugmaker }}` makes slugs out of the content within its tag pair.
       
     {{ slugmaker }}{{ some_plugin param="val" }}{{ /slugmaker }}
 
-### Lowercase
-Making slugs often requires lowercase characters as well. To do so, use the lower parameter.
-  
-    {{ slugmaker lower="true" }}
+#### Optional Setting
+##### lower
+    lower=""
 
-<p class="alert alert-info">You can pass any value that evaluates to true (<code>yes</code> or <code>1</code> for example).</p>
+To make sure letters are lowercase, use the lower parameter.
+  
+    {{ slugmaker lower="true" }}{{ some_plugin param="val" }}{{ /slugmaker }}
 {{ /noparse }}
